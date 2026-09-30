@@ -1,0 +1,36 @@
+{
+  "name": "twitch",
+  "version": "1.0.0",
+  "description": "Twitch",
+  "author": "Subhajit",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+  "appId": "com.local.twitch",
+  "productName": "Twitch",
+  "executableName": "twitch",
+  "copyright": "Copyright © YOUR_USERNAME",
+  "files": ["main.js", "icon.ico", "package.json"],
+  "win": {
+    "target": ["nsis", "portable"],
+    "icon": "icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "icon.ico",
+    "uninstallerIcon": "icon.ico",
+    "artifactName": "twitch-setup-${version}.${ext}"
+  },
+  "portable": {
+    "artifactName": "twitch.exe"
+  }
+},
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  }
+}
