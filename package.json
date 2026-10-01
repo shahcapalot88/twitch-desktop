@@ -12,7 +12,7 @@
   "appId": "com.local.twitch",
   "productName": "Twitch",
   "executableName": "twitch",
-  "copyright": "Copyright © YOUR_USERNAME",
+  "copyright": "Copyright © subhajit",
   "files": ["main.js", "icon.ico", "package.json"],
   "win": {
     "target": ["nsis", "portable"],
